@@ -1,34 +1,82 @@
 @import "src/variable.scss";
-
-.top-navbar {
-  background-color: black;
-  color: white;
-  padding: 10px 0;
+.contact_us_container {
+  background-color: #020202;
+  height: 44px;
 }
-.top-navbar-days {
-  color: grey;
-  font-size: 18px;
-}
-.top-navbar-time {
-  font-size: 18px;
-}
-.top-navbar-callus {
-  font-size: 18px;
-}
-.top-navbar-content {
+.contact_us_info {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
+.contact_info_left {
+  color: white;
+}
+.contact_info_right {
+  color: white;
+}
+.contact_info_left span {
+  font-size: $main-small-font-size;
+  line-height: 18px;
+}
+.grey_text {
+  color: #a2a6b0;
+}
+.contact_info_right span {
+  font-size: $main-small-font-size;
+  line-height: 18px;
+}
+.navbar-expand-lg {
+  height: 92px;
+  background-color: white !important;
+}
+.navbar-nav .show > .nav-link,
+.navbar-nav .nav-link.active {
+  color: var(--bs-navbar-active-color);
+  font-size: $main-font-size;
+  font-weight: 600;
+  line-height: 21px;
+}
+.main_about_container {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.about_container {
+  margin-left: 68px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about_product span {
+  font-size: $main-font-size;
+  font-weight: 600;
+  color: #666666;
+  border-bottom: 2px solid $button-bg-color;
+  padding-bottom: 3px;
+}
+.product_price {
+  display: flex;
+  align-items: center;
+}
+.product_price input {
+  width: 70px;
+  margin: 0px 20px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  background-color: $product-card-bg;
+  height: 50px;
+  padding: 5px;
+}
+.bold_price {
+  font-weight: 600;
+  font-size: $main-font-size;
+}
+.price_label {
+  font-weight: 400;
+  font-size: $main-font-size;
+}
 @media screen and (max-width: 568px) {
-  .top-navbar-days {
-    font-size: 14px;
-  }
-  .top-navbar-time {
-    font-size: 14px;
-  }
-  .top-navbar-callus {
-    font-size: 14px;
+  .contact_us_info {
+    padding: 0px;
   }
 }

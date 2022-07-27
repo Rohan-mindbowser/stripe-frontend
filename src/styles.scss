@@ -1,6 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import "src/variable.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.custom-btn{
+  padding: 12px 45px;
+  border-radius: 50px;
+  background-color: $button-bg-color;
+  color: $main-white-color;
+  border: none;
+  outline: none;
+  font-size: $main-font-size;
+
 }
