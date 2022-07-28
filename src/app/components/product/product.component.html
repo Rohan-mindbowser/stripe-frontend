@@ -1,12 +1,12 @@
 <div class="container-fluid">
-  <div class="container product_main_container">
+  <div class="container product_main_container" *ngIf="products !== undefined">
     <div class="product_details">
       <div class="product_description">
         <div class="about_product">
-            <span>About Product</span>
-          </div>
+          <span>About Product</span>
+        </div>
         <span class="apple_product">APPLE PRODUCTS</span>
-        <span class="product_name">New Apple AirPods (3rd Generation)</span>
+        <span class="product_name">{{ products.product_name }}</span>
         <span class="product_tag">It’s magic, remastered!</span>
         <ul class="product_info">
           <li>
@@ -34,7 +34,7 @@
             iPod touch or Apple TV
           </li>
         </ul>
-        <span class="product_code">SKU D5515AI</span>
+        <span class="product_code">{{ products.product_id }}</span>
       </div>
       <div class="product_images">
         <div
@@ -74,7 +74,7 @@
             </div>
             <div class="carousel-item">
               <img
-                src="https://m.media-amazon.com/images/I/81kUhm40nQL._SL1500_.jpg"
+                src="https://m.media-amazon.com/images/I/71fkE5LBc+L._SL1500_.jpg"
                 class="d-block w-100"
                 alt="..."
               />
@@ -87,7 +87,7 @@
               />
             </div>
           </div>
-          <!-- <button
+          <button
             class="carousel-control-prev"
             type="button"
             data-bs-target="#carouselExampleIndicators"
@@ -104,7 +104,7 @@
           >
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
-          </button> -->
+          </button>
         </div>
       </div>
     </div>
