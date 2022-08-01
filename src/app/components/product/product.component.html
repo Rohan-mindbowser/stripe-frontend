@@ -1,4 +1,5 @@
 <div class="container-fluid product_container_fluid">
+  <div class="background_div"></div>
   <div class="container product_main_container" *ngIf="products !== undefined">
     <div class="product_details">
       <div class="product_description">
@@ -43,21 +44,28 @@
           data-bs-ride="carousel"
         >
           <div class="carousel-inner">
-            <div class="carousel-item active">
+            <div class="carousel-item active" data-bs-interval="1000">
               <img
                 src="https://m.media-amazon.com/images/I/615ekapl+pL._SL1500_.jpg"
                 class="d-block w-100"
                 alt="..."
               />
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" data-bs-interval="1000">
               <img
                 src="https://m.media-amazon.com/images/I/71fkE5LBc+L._SL1500_.jpg"
                 class="d-block w-100"
                 alt="..."
               />
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" data-bs-interval="1000">
+              <img
+                src="https://m.media-amazon.com/images/I/615ekapl+pL._SL1500_.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="1000">
               <img
                 src="https://m.media-amazon.com/images/I/61jMxzQcPjL._SL1500_.jpg"
                 class="d-block w-100"
@@ -86,6 +94,12 @@
               data-bs-slide-to="2"
               aria-label="Slide 3"
             ></button>
+            <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
           </div>
           <button
             class="carousel-control-prev"
