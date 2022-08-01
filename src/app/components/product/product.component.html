@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container-fluid product_container_fluid">
   <div class="container product_main_container" *ngIf="products !== undefined">
     <div class="product_details">
       <div class="product_description">
@@ -42,28 +42,6 @@
           class="carousel slide"
           data-bs-ride="carousel"
         >
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-          </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img
@@ -86,6 +64,28 @@
                 alt="..."
               />
             </div>
+          </div>
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
           </div>
           <button
             class="carousel-control-prev"

@@ -1,6 +1,7 @@
 @import "src/variable.scss";
 
 .product_main_container {
+  padding-top: 220px;
 }
 .product_details {
   display: flex;
@@ -11,6 +12,7 @@
   // background-color: $product-card-bg;
 }
 .product_description {
+  // margin-left: 33%;
   background-color: $product-card-bg;
   flex: 1;
   display: flex;
@@ -65,12 +67,30 @@
 .about_product {
   display: none;
 }
+.carousel-indicators {
+  position: relative;
+  margin-top: 30px;
+}
+.carousel-indicators button {
+  background-color: #0156ff;
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
+  
+}
 @media screen and (max-width: 991px) {
+  .product_main_container {
+    padding: 150px 0px 0px 0px;
+  }
+  .product_container_fluid {
+    padding: 0;
+  }
   .product_details {
     flex-direction: column-reverse;
   }
   .product_description {
     flex: 100%;
+    padding-bottom: 80px;
   }
   .product_images {
     flex: 100%;
@@ -78,11 +98,11 @@
   .product_details {
     margin-left: 0px;
   }
-  .product_main_container {
-    padding: 0px;
-  }
 }
 @media screen and (max-width: 568px) {
+  .product_main_container {
+    padding: 100px 0px 0px 0px;
+  }
   .apple_product {
     display: none;
   }
