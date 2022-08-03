@@ -8,10 +8,22 @@ import { ProductComponent } from './components/product/product.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PaymentSuccessComponent } from './components/payment-success/payment-success.component';
 import { HomescreenComponent } from './components/homescreen/homescreen.component';
+import { NgxHttpLoaderModule } from 'ngx-http-loader';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, ProductComponent, PaymentSuccessComponent, HomescreenComponent],
-  imports: [BrowserModule, AppRoutingModule,HttpClientModule],
+  declarations: [
+    AppComponent,
+    NavbarComponent,
+    ProductComponent,
+    PaymentSuccessComponent,
+    HomescreenComponent,
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    NgxHttpLoaderModule.forRoot(),
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
