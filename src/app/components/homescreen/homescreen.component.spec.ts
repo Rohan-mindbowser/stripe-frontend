@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HomescreenComponent } from './homescreen.component';
@@ -8,9 +9,9 @@ describe('HomescreenComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HomescreenComponent ]
-    })
-    .compileComponents();
+      declarations: [HomescreenComponent],
+      imports: [HttpClientModule],
+    }).compileComponents();
   });
 
   beforeEach(() => {
@@ -22,4 +23,5 @@ describe('HomescreenComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
 });
