@@ -13,9 +13,15 @@ export class ProductApiService {
     return this.http.get('http://localhost:5000/product/getproducts');
   }
 
-  checkout(qty: any): Observable<any> {
-    return this.http.post('http://localhost:5000/product/checkout', {
-      quantity: qty,
-    },{responseType: 'text'});
+  //Calling stripe checkout from backend
+  checkout(qty: any, product_details: any): Observable<any> {
+    return this.http.post(
+      'http://localhost:5000/product/checkout',
+      {
+        quantity: qty,
+        product_details,
+      },
+      { responseType: 'text' }
+    );
   }
 }

@@ -16,8 +16,10 @@ export class HomescreenComponent implements OnInit {
     });
   }
   checkout(quantity: any) {
-    this._productApi.checkout(quantity.value).subscribe((url) => {
-      window.location.href = url;
-    });
+    this._productApi
+      .checkout(quantity.value, this.products)
+      .subscribe((url) => {
+        window.location.href = url;
+      });
   }
 }

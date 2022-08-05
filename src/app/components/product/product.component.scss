@@ -46,7 +46,7 @@
 .product_tag {
   font-size: $main-small-font-size;
   font-weight: 400;
-  color: #a2a6b0;
+  color: #000;
   margin-bottom: 24px;
 }
 .product_info {
@@ -58,10 +58,12 @@
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
+  color: #000;
 }
 .product_code {
   font-size: $main-small-font-size;
-  color: #a2a6b0;
+  color: #000;
+  font-weight: 300;
 }
 .carousel {
   width: 375px;

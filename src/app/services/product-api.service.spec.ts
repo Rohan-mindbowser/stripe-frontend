@@ -29,7 +29,7 @@ fdescribe('ProductApiService', () => {
     service.checkout(2).subscribe((res) => {
       newUrl = res;
     });
-    console.log(newUrl)
+    console.log(newUrl);
     expect(newUrl).toBeTruthy(url);
   });
 });
