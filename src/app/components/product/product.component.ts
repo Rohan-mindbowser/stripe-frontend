@@ -13,6 +13,7 @@ export class ProductComponent implements OnInit {
   ngOnInit(): void {
     this._productApi.getProduct().subscribe((product) => {
       this.products = product[0];
+      console.log(this.products)
     });
   }
 }
